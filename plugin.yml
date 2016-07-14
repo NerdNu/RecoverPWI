@@ -1,0 +1,19 @@
+name: ${project.name}
+version: ${project.version}
+author: totemo
+authors: [totemo]
+description: ${project.description}
+website: ${project.url}
+main: nu.nerd.pwi.RecoverPWI
+
+permissions:
+  recoverpwi.use:
+    description: Permission to administer the plugin.
+    default: op
+
+commands:
+  recoverpwi:
+    description: ${project.name} administrative command.
+    permission: recoverpwi.use
+    usage: |
+      /<command> <file>: Load inventory items from plugins/${project.name}/<file>.
